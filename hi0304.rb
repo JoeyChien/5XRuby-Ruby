@@ -9,3 +9,5 @@ x,y = y,x
 
 puts x
 puts y
+puts x
+puts y
