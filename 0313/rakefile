@@ -1,0 +1,18 @@
+desc "sending mail"
+#task(:sendmail) do
+task :sendmail do
+  puts "寄信中，請稍後..."
+  sleep 3
+  puts "搞定!"
+end
+
+namespace :db do
+  desc "資料庫..."
+    task :migrate do
+    puts "整理資料庫"
+  end
+end
+
+task :default => :sendmail 
+#task ({:default => :sendmail}) 
+
